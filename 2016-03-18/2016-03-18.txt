@@ -1,0 +1,24 @@
+Transact SQL = T-SQL
+
+4 categorias
+
+DML - Linguagem de Manipulação de Dados
+-- Select, Insert, Update, Delete
+
+DCL - Linguagem de Controla de Dados
+-- Grant, Revoke, Deny
+
+DDL - Linguagem de Definição de Dados
+-- Create, Drop, Alter
+
+Linguagem de Consulta de Dados --- Select
+
+
+-- Constraints
+Primary Key
+Foreign Key
+Not null - nao aceita valor nulo
+Null - aceita e permite valor null
+Default - especifica um valor padrão apra a coluna
+Check- Verifica e valida se o dado inserido é permitido
+Unique - nao permite valores repetidos na mesma coluna
