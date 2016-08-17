@@ -63,3 +63,5 @@ CREATE TABLE anoFabricacao (
 	ano DATE
 )
 GO
+
+ /* Comentario */
