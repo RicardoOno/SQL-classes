@@ -32,7 +32,7 @@ CREATE TABLE categoria (
 GO
 
 CREATE TABLE modelo (
-	idResponsavel INT PRIMARY KEY NOT NULL IDENTITY(1,1),
+	idModelo INT PRIMARY KEY NOT NULL IDENTITY(1,1),
 	descricao VARCHAR (150),
 	idMarca INT NOT NULL
 )
@@ -65,3 +65,28 @@ CREATE TABLE anoFabricacao (
 GO
 
  /* Comentario */
+
+Alter table Veiculos 
+	Add Constraint FK_Veiculos_idCategorias Foreign Key (idCategoria)
+	References Categoria(idCategoria)
+Go
+
+Alter table Veiculos 
+	Add Constraint FK_Veiculos_idModelo Foreign Key (idModelo)
+	References Modelo(idModelo)
+Go
+
+Alter table Veiculos 
+	Add Constraint FK_Veiculos_idMarca Foreign Key (idMarca)
+	References Marca(idMarca)
+Go
+
+Alter table Veiculos 
+	Add Constraint FK_Veiculos_idAnoFabricacao Foreign Key (idAnoFabricacao)
+	References anoFabricacao(idAnoFabricacao)
+Go
+
+Alter table Modelo 
+	Add Constraint FK_Modelos_idMarca Foreign Key (idMarca)
+	References Marca(idMarca)
+Go
