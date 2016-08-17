@@ -90,3 +90,13 @@ Alter table Modelo
 	Add Constraint FK_Modelos_idMarca Foreign Key (idMarca)
 	References Marca(idMarca)
 Go
+
+Alter table Responsavel 
+	Add Constraint FK_Responsavel_idEndereco Foreign Key (idEndereco)
+	References Endereco(idEndereco)
+Go
+
+Alter table Responsavel 
+	Add Constraint FK_Responsavel_idVeiculo Foreign Key (idVeiculo)
+	References Veiculos(idVeiculo)
+Go
